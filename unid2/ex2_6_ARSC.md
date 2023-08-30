@@ -1,6 +1,6 @@
 2.6. Utilizando linguagem de programação defina:  
 
-Para rodar o código do arquivo ex2_6_ARSC.ts: ts-node .\unid2\ex2_6_ARSC.ts
+Para rodar o código do arquivo ex2_6_ARSC.ts: `ts-node .\unid2\ex2_6_ARSC.ts` ou `npm run seis`
 
 a. Uma enumeração para os meses do ano.  
 
