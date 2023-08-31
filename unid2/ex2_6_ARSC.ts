@@ -86,17 +86,17 @@ console.log("Sábado:", Days.Saturday);
 
 //c) Uma função recursiva para o cálculo do fatorial de um número.
 
-function factorial(n: number): number {
+function factorial_ARSC(n: number): number {
   if (n == 1) {
     return 1;
   } else {
-    return n * factorial(n - 1);
+    return n * factorial_ARSC(n - 1);
   }
 }
 
-console.log( "Exemplo de fatorial de 3: " ,factorial(3)); // Exemplo com fatorial de 3
+console.log( "Exemplo de fatorial de 3: " ,factorial_ARSC(3)); // Exemplo com fatorial de 3
 
-console.log( "Exemplo de fatorial de 5: " , factorial(5)); // Exemplo com fatorial de 5
+console.log( "Exemplo de fatorial de 5: " , factorial_ARSC(5)); // Exemplo com fatorial de 5
 
 //d) Uma definição que corresponda a definição do tipo gênero-diferença para uma pessoa que estude em uma faculdade. Utilize uma linguagem que dê suporte a herança.
 

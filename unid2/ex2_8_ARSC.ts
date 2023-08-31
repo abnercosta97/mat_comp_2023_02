@@ -1,17 +1,17 @@
 //exemplo de codigo recurtsivo:
 
-function sequenceREC(n: number): number {
+function sequenceREC_ARSC(n: number): number {
   if (n == 1) {
     return 1;
   } else {
-    return 2 * sequenceREC(n - 1);
+    return 2 * sequenceREC_ARSC(n - 1);
   }
 }
-console.log( "RECURSIVO: " , sequenceREC(10));
+console.log( "RECURSIVO: " , sequenceREC_ARSC(10));
 
 //exemplo de codigo iterativo:
 
-function sequenceITE(n: number): number {
+function sequenceITE_ARSC(n: number): number {
 
     let term: number = 1;
     let limit: number = 2;
@@ -21,4 +21,4 @@ function sequenceITE(n: number): number {
     }
     return term;
 }
-console.log( "ITERATIVO: " ,sequenceITE(10));
+console.log( "ITERATIVO: " ,sequenceITE_ARSC(10));
