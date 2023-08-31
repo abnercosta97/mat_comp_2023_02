@@ -6,7 +6,9 @@
   "scripts": {
     "seis": "ts-node ./unid2/ex2_6_ARSC",
     "sete": "ts-node ./unid2/ex2_7_VIEW_ARSC",
-    "oito": "ts-node ./unid2/ex2_8_ARSC"
+    "oito": "ts-node ./unid2/ex2_8_ARSC",
+    "nove": "ts-node ./unid2/ex2_9_ARSC",
+    "dez": "ts-node ./unid2/ex2_10_ARSC"
   },
   "keywords": [],
   "author": "",
