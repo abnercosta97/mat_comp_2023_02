@@ -14,15 +14,15 @@ class Veiculo{
 }
 
 class Eletrico extends Veiculo{
-    bateria: number;
+    carga: number;
     
     
-    constructor(bateria:number, longitude: number, latitude: number){
+    constructor(carga:number, longitude: number, latitude: number){
         super(longitude, latitude);
-        this.bateria = bateria;
+        this.carga = carga;
     }
     print(): void {
-        console.log(`Esta é a porcentagem da bateria: ${this.bateria} e a longitude: ${this.longitude} e a latitude: ${this.latitude}`);
+        console.log(`Esta é a porcentagem da bateria: ${this.carga} e a longitude: ${this.longitude} e a latitude: ${this.latitude}`);
       }
 }
 class Voador extends Eletrico{
@@ -34,7 +34,7 @@ class Voador extends Eletrico{
         this.vertical = vertical;
     }
     print(): void {
-        console.log(`Esta é a posição vertical: ${this.vertical} , porcentagem de bateria: ${this.bateria} , longitude: ${this.longitude} e a latitude: ${this.latitude}`);
+        console.log(`Esta é a posição vertical: ${this.vertical} , porcentagem de bateria: ${this.carga} , longitude: ${this.longitude} e a latitude: ${this.latitude}`);
       }
 }
 export {Veiculo, Eletrico, Voador}
