@@ -22,11 +22,13 @@ class FuncoesLogicaProposicional {
 
 function tabelaVerdade(): void {
   console.log("Tabela Verdade:");
-  console.log("p | q | AND | OR | Implicação | Equivalência | XOR");
-  console.log("--|---|-----|----|------------|--------------|----");
+  console.log("p    | q    | AND | OR   | Implicação | Equivalência | XOR");
+  console.log("-----|------|-----|------|------------|--------------|----");
 
-  for (let p = true; p >= false; p = !p) {
-    for (let q = true; q >= false; q = !q) {
+  const valoresBooleanos = [true, false];
+
+  for (const p of valoresBooleanos) {
+    for (const q of valoresBooleanos) {
       const resultadoAnd = FuncoesLogicaProposicional.and(p, q);
       const resultadoOr = FuncoesLogicaProposicional.or(p, q);
       const resultadoImplicacao = FuncoesLogicaProposicional.implicacao(p, q);
@@ -37,10 +39,10 @@ function tabelaVerdade(): void {
       const resultadoXOR = FuncoesLogicaProposicional.xor(p, q);
 
       console.log(
-        `${p} | ${q} |  ${resultadoAnd}  |  ${resultadoOr} |     ${resultadoImplicacao}     |       ${resultadoEquivalencia}      |  ${resultadoXOR}`
+        `${p} | ${q} |  ${resultadoAnd}  |  ${resultadoOr} |     ${resultadoImplicacao}     | ${resultadoEquivalencia}      |  ${resultadoXOR}`
       );
     }
   }
 }
 
-console.log(tabelaVerdade());
+tabelaVerdade();
